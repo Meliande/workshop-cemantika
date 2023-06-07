@@ -60,6 +60,7 @@ const Inscricao = () => {
             id="email"
             type="email"
             placeholder="Digite seu e-mail"
+            name="email"
           />
         </div>
         <div className="flex items-center justify-center">
