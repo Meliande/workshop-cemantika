@@ -2,7 +2,7 @@
 
 import React from 'react'
 import emailjs from '@emailjs/browser'
-import toast from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast'
 
 const Inscricao = () => {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -18,7 +18,9 @@ const Inscricao = () => {
       .then(
         (result) => {
           console.log(result.text)
-          toast.success('Successfully created!')
+          toast.success(
+            'Inscrição feita com sucesso, verifique o e-mail informado!',
+          )
         },
         (error) => {
           console.log(error.text)
@@ -70,6 +72,7 @@ const Inscricao = () => {
           >
             Inscrever-se
           </button>
+          <Toaster />
         </div>
       </form>
     </div>
