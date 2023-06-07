@@ -1,24 +1,26 @@
-'use client'
-
-import { useEffect, useRef } from "react";
+import Image from 'next/image'
+import gif from 'public/gif.gif'
+import { BsGeoAltFill } from 'react-icons/bs'
 
 export default function Home() {
-
-  const video = useRef<HTMLVideoElement>();
-
-  const playVideo = (event: any) => {
-    video.current && video.current.play();
-  };
-  
   return (
-    <main className='h-screen flex flex-col gap-6 py-9 px-64'>
-      <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
-            <source src="public/Workshop CEManTIKA on 6-2-23 at 11.04 AM.webm" type='video/webm; codecs=vp9'/>
-        </video>
-      <p>
-        Promovido mensalmente pela Comissão Especial de Sistemas Colaborativos da Sociedade Brasileira de Computação (SBC), o Simpósio Brasileiro de Sistemas Colaborativos (SBSC) visa agregar pesquisadores, estudantes e profissionais do Brasil e do exterior, com interesse em temas relacionados a tecnologias colaborativas.
-        O evento sempre teve como objetivo central promover discussões que envolvam, sob várias perspectivas, o desenvolvimento e a avaliação de tecnologias colaborativas, a investigação de como a colaboração mediada pelas diferentes tecnologias ocorre na prática, e a aplicação dessas tecnologias em diversos domínios. Alguns exemplos atuais dessas tecnologias incluem:
-      </p>
+    <main className="h-screen flex items-center justify-center gap-16">
+      <div className="flex flex-col items-start gap-5">
+        <h1 className="font-bold text-5xl text-emerald-800">
+          WorkShop CEManTIKA
+        </h1>
+        <h2 className="text-lg text-emerald-500">20 de Junho de 2023</h2>
+        <div className="flex items-center gap-4">
+          <BsGeoAltFill className="text-emerald-800" size={25} />
+          <span className="text-xl text-emerald-800">Qualquer lugar</span>
+        </div>
+        <button className="p-3 rounded-lg bg-black text-emerald-300 hover:bg-emerald-700 hover:text-white transition-colors">
+          <a href="">Conheça o local</a>
+        </button>
+      </div>
+      <div className="bg-violet-600 -skew-x-6 rounded-lg overflow-hidden hover:skew-x-0 hover:scale-110 transition duration-300 border border-black">
+        <Image className="opacity-50" src={gif} width={500} alt="" />
+      </div>
     </main>
   )
 }

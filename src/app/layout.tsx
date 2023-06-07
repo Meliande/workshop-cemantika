@@ -1,9 +1,13 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Footer from '@/components/Footer'
+import React from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Workshop CEManTIKA | UFBA',
@@ -17,10 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} justify-between`}>
-        <Navbar/>
+      <body
+        className={`${roboto.className} flex flex-col pt-8 justify-between max-h-screen`}
+      >
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )
