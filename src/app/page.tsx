@@ -18,7 +18,7 @@ export default function Home() {
           <a href="">Conheça o local</a>
         </button>
       </div>
-      <div className="-skew-x-6 rounded-lg overflow-hidden hover:skew-x-0 hover:scale-110 transition duration-300 border border-black">
+      <div className="rounded-lg overflow-hidden border border-black">
         <Image className="" src={gif} width={500} alt="" />
       </div>
     </main>

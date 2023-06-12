@@ -31,10 +31,9 @@ const Inscricao = () => {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-6">
-      <p className="w-1/6">
-        As inscrições são gratuitas e abertas à qualquer pessoa, basta preencher
-        o formulário abaixo para receber o link de acesso à plataforma que
-        utilizaremos para realizar nosso Workshop
+      <p className="w-1/2 bg-emerald-100 text-emerald-800 shadow-md rounded-lg p-4 text-center">
+        Para se Inscrever basta preencher o formulário abaixo, você receberá um
+        link no email informado para acesso da plataforma logo em seguida.
       </p>
       <form
         className="bg-emerald-100 shadow-md rounded px-8 pt-6 pb-8 mb-4"

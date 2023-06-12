@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} flex flex-col pt-8 justify-between max-h-screen`}
+        className={`${roboto.className} bg-slate-200 flex flex-col pt-8 justify-between max-h-screen gap-6`}
       >
         <Navbar />
         {children}

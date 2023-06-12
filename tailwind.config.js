@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        bg: 'url(/bg2.jpg)',
+      },
       screens: {
         smartphone: '320px',
         // => @media (min-width: 640px) { ... }
