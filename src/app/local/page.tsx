@@ -10,6 +10,14 @@ const LocalPage = () => {
           você pode nos acompanhar diretamente da sua casa.
         </p>
       </div>
+      <button>
+        <a
+          target="__blank"
+          href="https://docs.google.com/document/d/1V2fEmoes-WVOyb42zmdsuA_qJEmOw6oLg5OUKctDf1U/edit?usp=sharing"
+        >
+          asdsa
+        </a>
+      </button>
     </div>
   )
 }
