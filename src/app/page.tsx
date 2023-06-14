@@ -9,13 +9,17 @@ export default function Home() {
         <h1 className="font-bold text-5xl text-center text-emerald-800">
           WorkShop CEManTIKA
         </h1>
-        <h2 className="text-lg text-emerald-500">20 de Junho de 2023</h2>
+        <h2 className="uppercase text-lg text-emerald-500">
+          20 de Junho de 2023
+        </h2>
         <div className="flex items-center gap-4">
           <BsGeoAltFill className="text-emerald-800" size={25} />
-          <span className="text-xl text-emerald-800">Qualquer lugar</span>
+          <span className="uppercase text-xl text-emerald-800">
+            Qualquer lugar
+          </span>
         </div>
-        <button className="uppercase p-3 rounded-lg bg-black text-emerald-300 hover:bg-emerald-700 hover:text-white transition-colors">
-          <a href="">Conheça o local</a>
+        <button className="uppercase p-3 rounded-lg bg-emerald-800 text-white hover:bg-emerald-700 hover:text-white transition-colors">
+          <a href="/local">Conheça o local</a>
         </button>
       </div>
       <div className="rounded-lg overflow-hidden border border-black">

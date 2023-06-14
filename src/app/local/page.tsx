@@ -14,8 +14,9 @@ const LocalPage = () => {
         <a
           target="__blank"
           href="https://docs.google.com/document/d/1V2fEmoes-WVOyb42zmdsuA_qJEmOw6oLg5OUKctDf1U/edit?usp=sharing"
+          className="font-bold uppercase text-white p-4 bg-emerald-800 rounded-full hover:bg-emerald-700 transition-colors"
         >
-          asdsa
+          Aprenda um pouco mais sobre a plataforma
         </a>
       </button>
     </div>
