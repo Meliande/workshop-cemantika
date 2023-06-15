@@ -1,11 +1,10 @@
-import FormText from '@/components/FormText'
 import Image from 'next/image'
 import gif from 'public/gif.gif'
 import { BsGeoAltFill } from 'react-icons/bs'
 
 export default function Home() {
   return (
-    <main className="h-full pt-5 flex flex-col items-center justify-center gap-16 px-9">
+    <main className="h-screen pt-5 flex flex-col items-center justify-center gap-16 px-9">
       <h1 className="font-bold text-5xl text-center text-emerald-800">
         WorkShop CEManTIKA
       </h1>
@@ -20,9 +19,8 @@ export default function Home() {
           </span>
         </div>
         <button className="uppercase p-3 rounded-lg bg-emerald-800 text-white hover:bg-emerald-700 hover:text-white transition-colors">
-          <a href="/local">Conheça o local</a>
+          <a href="/local">Conheça o Workshop</a>
         </button>
-        <FormText />
       </div>
       <div className="">
         <Image className="rounded-lg" src={gif} width={500} alt="" />

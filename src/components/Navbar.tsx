@@ -81,7 +81,9 @@ const Navbar = () => {
     <div className="flex flex-row justify-center items-center">
       <div className="flex-row gap-10 uppercase hidden laptop:flex">
         <NavBarButtom url="/" label="Início" />
+        <NavBarButtom url="/sobre" label="Sobre" />
         <NavBarButtom url="/programacao" label="Programação" />
+        <NavBarButtom url="/organizacao" label="Organização" />
         <NavBarButtom url="/local" label="Local" />
         <a
           href="/inscricao"
@@ -129,6 +131,12 @@ const Navbar = () => {
           <CustomMobileLink
             href="programacao"
             title="PROGRAMAÇÃO"
+            toggle={handleClick}
+          />
+          <CustomMobileLink href="/sobre" title="SOBRE" toggle={handleClick} />
+          <CustomMobileLink
+            href="/organizacao"
+            title="ORGANIZAÇÃO"
             toggle={handleClick}
           />
           <CustomMobileLink

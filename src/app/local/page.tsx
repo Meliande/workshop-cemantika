@@ -1,23 +1,22 @@
-import FormText from '@/components/FormText'
-
 const LocalPage = () => {
   return (
-    <div className="h-screen flex flex-col items-center mt-20 justify-center px-8 gap-16 text-left">
+    <div className="h-screen flex flex-col items-center px-8 gap-16 text-left">
       <div className="flex flex-col gap-5 items-center justify-center">
         <h1 className="text-3xl text-emerald-800 font-bold">
           Fique livre para acompanhar de onde quiser !
         </h1>
         <p className="w-96">
-          Nosso evento será realizado em um ambiente do metaverso portanto
-          poderá ser acessado de qualquer lugar, você pode nos acompanhar
-          diretamente da sua casa.
+          O próximo Workshop CEManATIKA, que ocorrerá em uma plataforma
+          inovadora e imersiva: o Metaverso. Este evento representa uma
+          oportunidade única para compartilhar conhecimentos, discutir trabalhos
+          em andamento e obter valiosos feedbacks dos participantes.
         </p>
-        <p className="w-96">
+        {/*         <p className="w-96">
           Por favor responda o formulário abaixo para que possamos conhecer um
           pouco mais sobre seu entendimento e expectativas sobre o metaverso
         </p>
 
-        <FormText />
+        <FormText /> */}
       </div>
       <button>
         <a
