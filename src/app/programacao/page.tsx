@@ -90,10 +90,6 @@ const PageProgramacao = () => {
           />
         </div>
       </div>
-
-      <button className="bg-emerald-800 text-white p-5 font-bold rounded-full uppercase hover:bg-emerald-700 transition-colors duration-300">
-        <a href="">Acesse mais informações sobre as apresentações</a>
-      </button>
     </div>
   )
 }
