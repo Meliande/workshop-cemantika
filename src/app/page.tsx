@@ -19,7 +19,7 @@ export default function Home() {
           </span>
         </div>
         <button className="uppercase p-3 rounded-lg bg-emerald-800 text-white hover:bg-emerald-700 hover:text-white transition-colors">
-          <a href="/local">Conheça o Workshop</a>
+          <a href="/sobre">Conheça o Workshop</a>
         </button>
       </div>
       <div className="">
