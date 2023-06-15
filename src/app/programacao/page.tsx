@@ -27,67 +27,68 @@ const PageProgramacao = () => {
         Programação
       </h1>
       <h1 className="uppercase text-xl font-bold">20/06 - Terça-feira</h1>
-      <div className="relative flex flex-row gap-3 overflow-x-auto shadow-md sm:rounded-lg">
-        <table className="w-full text-xl text-left">
-          <thead className="text-xl uppercase bg-emerald-800 text-white border-b">
-            <tr>
-              <th className="px-6 py-3">Horário</th>
-              <th className="px-6 py-3">Atividade</th>
-              <th className="px-6 py-3 hidden tablet:flex tablet:justify-center">
-                Descrição
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <CustomTR
-              horario="09:00 - 09:15"
-              atividade="Ambientação"
-              descricao="Tour guiado pelo ambiente"
-            />
-            <CustomTR
-              horario="09:15 - 09:20"
-              atividade="Abertura"
-              descricao="Cerimônia de abertura com a Profª Drª Vaninha Vieira"
-            />
-            <CustomTR
-              horario="09:20 - 10:00"
-              atividade="Roda de conversa"
-              descricao="Compartilhando experiências em eventos nacionais e internacionais"
-            />
-            <CustomTR
-              horario="10:00 - 10:40"
-              atividade="Keynote - Rodrigo Falcão"
-              descricao="Tema + Descrição"
-            />
-            <CustomTR
-              horario="10:40 - 11:00"
-              atividade="Intervalo"
-              descricao="Tempo para socilização e utilização do ambiente como meio social"
-            />
-            <CustomTR
-              horario="11:00 - 12:00"
-              atividade="Sessão técnica"
-              descricao="Conhecendo os trabalhos do grupo CEManTIKA"
-            />
-            <CustomTR
-              horario="12:00 - 12:20"
-              atividade="Formulário"
-              descricao="Instruções para preenchimento do fomulário sobre as experiências dos usuários do ambiente"
-            />
-            <CustomTR
-              horario="12:20 - 12:30"
-              atividade="Encerramento"
-              descricao="Cerimônia de encerramento com a Profª Drª Vaninha Vieira"
-            />
-          </tbody>
-        </table>
-        <Image
-          className="w-96 rounded-md hidden laptop:flex"
-          src={banner}
-          alt=""
-          width={2000}
-          height={2000}
-        />
+      <div className="overflow-auto">
+        <div className="relative flex flex-row gap-3 overflow-x-auto shadow-md sm:rounded-lg">
+          <table className="w-full text-xl text-left ">
+            <thead className="text-xl uppercase bg-emerald-800 text-white border-b">
+              <tr>
+                <th className="px-6 py-3">Horário</th>
+                <th className="px-6 py-3">Atividade</th>
+                <th className="px-6 py-3 hidden tablet:flex tablet:justify-center">
+                  Descrição
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <CustomTR
+                horario="09:00 - 09:15"
+                atividade="Ambientação"
+                descricao="Tour guiado pelo ambiente"
+              />
+              <CustomTR
+                horario="09:15 - 09:20"
+                atividade="Abertura"
+                descricao="Cerimônia de abertura com a Profª Drª Vaninha Vieira"
+              />
+              <CustomTR
+                horario="09:20 - 10:00"
+                atividade="Roda de conversa"
+                descricao="Compartilhando experiências em eventos nacionais e internacionais"
+              />
+              <CustomTR
+                horario="10:00 - 10:40"
+                atividade="Keynote - Rodrigo Falcão"
+                descricao="Tema + Descrição"
+              />
+              <CustomTR
+                horario="10:40 - 11:00"
+                atividade="Intervalo"
+                descricao="Tempo para socilização e utilização do ambiente como meio social"
+              />
+              <CustomTR
+                horario="11:00 - 12:00"
+                atividade="Sessão técnica"
+                descricao="Conhecendo os trabalhos do grupo CEManTIKA"
+              />
+              <CustomTR
+                horario="12:00 - 12:20"
+                atividade="Formulário"
+                descricao="Instruções para preenchimento do fomulário sobre as experiências dos usuários do ambiente"
+              />
+              <CustomTR
+                horario="12:20 - 12:30"
+                atividade="Encerramento"
+                descricao="Cerimônia de encerramento com a Profª Drª Vaninha Vieira"
+              />
+            </tbody>
+          </table>
+          <Image
+            className="w-96 rounded-md hidden laptop:flex"
+            src={banner}
+            alt=""
+            width={2000}
+          />
+        </div>
       </div>
 
       <button className="bg-emerald-800 text-white p-5 font-bold rounded-full uppercase hover:bg-emerald-700 transition-colors duration-300">

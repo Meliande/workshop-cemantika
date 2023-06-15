@@ -23,6 +23,9 @@ module.exports = {
         desktop: '1280px',
         // => @media (min-width: 1280px) { ... }
       },
+      animation: {
+        'slow-spin': 'spin 8s linear infinite',
+      },
     },
   },
   plugins: [],
