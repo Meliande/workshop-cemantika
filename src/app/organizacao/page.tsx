@@ -5,7 +5,7 @@ import rodrigo from 'public/rodrigo.jpg'
 
 const Organizacao = () => {
   return (
-    <div className="h-full flex flex-col items-center gap-10 laptop:h-screen smartphone:px-5 desktop:px-96 text-center">
+    <div className="h-full flex flex-col items-center gap-10 laptop:h-full smartphone:px-5 desktop:px-96 text-center">
       <p>
         Este evento é organizado pelos alunos da pós-graduação e graduação do
         CEManTIKA, sob a supervisão e orientação da professora Dra. Vaninha
@@ -29,17 +29,6 @@ const Organizacao = () => {
             {' '}
             <Image
               className="rounded-full w-32 h-32"
-              src={ailton}
-              width={1080}
-              height={1080}
-              alt=""
-            />
-            <span className="text-xl">Prof M.e Ailton Ribeiro</span>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            {' '}
-            <Image
-              className="rounded-full w-32 h-32"
               src={rodrigo}
               width={1080}
               height={1080}
@@ -47,6 +36,17 @@ const Organizacao = () => {
             />
             <span className="text-xl">Rodrigo Meliande</span>
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-8">
+          <h2 className="font-bold text-xl">Apoio Voluntário</h2>
+          <Image
+            className="rounded-full w-40 h-40"
+            src={ailton}
+            width={1080}
+            height={1080}
+            alt=""
+          />
+          <span className="text-xl">Prof M.e Ailton Ribeiro</span>
         </div>
       </div>
     </div>
