@@ -46,7 +46,7 @@ const Organizacao = () => {
             height={1080}
             alt=""
           />
-          <span className="text-xl">Prof M.e Ailton Ribeiro</span>
+          <span className="text-xl">Ailton Ribeiro</span>
         </div>
       </div>
     </div>
