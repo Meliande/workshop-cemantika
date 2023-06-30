@@ -58,7 +58,7 @@ const PageProgramacao = () => {
               <CustomTR
                 horario="10:00 - 10:40"
                 atividade="Keynote - Rodrigo Falcão"
-                descricao="Tema + Descrição"
+                descricao="Engenharia de software experimental"
               />
               <CustomTR
                 horario="10:40 - 11:00"
